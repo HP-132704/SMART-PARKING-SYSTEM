@@ -1,0 +1,84 @@
+📦 FOLDER STRUCTURE
+
+smart-parking-system/
+├── main.py                  # Main script to run the system
+├── parking_slot_detector.py # Core logic for detection
+├── parking_slot_config.json # Parking spot coordinates
+├── samples/                 # Sample video footage (.mp4)
+├── masks/                   # Binary mask images for slots
+├── static/                  # Output images or generated media
+├── README.md                # Project documentation
+├── requirements.txt         # Python dependencies
+└── venv/                    # Virtual environment (not pushed to GitHub)
+
+---
+
+🚀 GETTING STARTED
+
+Follow the steps below to set up and run the project locally:
+
+---
+
+1️⃣ Clone the Repository
+
+git clone https://github.com/harishankar/smart-parking-system.git
+cd smart-parking-system
+
+---
+
+2️⃣ Create and Activate a Virtual Environment
+
+python -m venv venv
+
+For Windows:
+venv\Scripts\activate
+
+For macOS/Linux:
+source venv/bin/activate
+
+---
+
+3️⃣ Install Dependencies
+
+pip install -r requirements.txt
+
+---
+
+4️⃣ Add Sample Files
+
+Place your parking lot video (e.g., parking_1920_1080_loop.mp4) in the samples/ folder.
+
+Ensure you also have:
+
+masks/mask_1.png — Binary mask image for slot detection
+
+parking_slot_config.json — Contains parking slot positions
+
+---
+
+5️⃣ Run the System
+
+python main.py
+🖥️ The system will process the video and show parking availability in real-time.
+
+---
+
+🛠 FEATURES
+
+✅ Detect available and occupied parking slots
+✅ Binary masking and polygonal slot mapping
+✅ Real-time video feed analysis
+✅ Easily configurable slot layout (JSON)
+✅ Supports any custom video feed or camera
+
+---
+
+🧠 FUTURE ENHANCEMENTS
+
+📡 Live CCTV stream input
+📲 Mobile/web dashboard with availability updates
+🌐 Integration with IoT sensors
+🔄 REST API for remote access
+📊 Historical data & analytics
+
+---
